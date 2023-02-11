@@ -1,0 +1,1541 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .row {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+    .column {
+      flex: 50%;
+      padding: 10px;
+      text-align: left;
+    }
+    p {
+      word-wrap: break-word;
+      text-indent: -20px;
+      padding-left: 20px;
+    }
+    .tab1 {
+      word-wrap: break-word;
+      padding-left: 20px;
+    }
+    .tab2 {
+      word-wrap: break-word;
+      padding-left: 40px;
+    }
+    footer {
+      margin-top: 50px;
+      border-top: 1px solid silver;
+      font-size: 0.8em;
+    }
+    footer ol {
+      padding-left: 20px;
+    }
+    /**
+ * Initialiazing a `footnotes` counter on the wrapper
+ */
+    article {
+      counter-reset: footnotes;
+    }
+    /**
+ * Inline footnotes references
+ * 1. Increment the counter at each new reference
+ * 2. Reset link styles to make it appear like regular text
+ */
+    [aria-describedby="footnote-label"] {
+      counter-increment: footnotes;
+      /* 1 */
+      text-decoration: none;
+      /* 2 */
+      color: inherit;
+      /* 2 */
+      cursor: default;
+      /* 2 */
+      outline: none;
+      /* 2 */
+    }
+    /**
+ * Actual numbered references
+ * 1. Display the current state of the counter (e.g. `[1]`)
+ * 2. Align text as superscript
+ * 3. Make the number smaller (since it's superscript)
+ * 4. Slightly offset the number from the text
+ * 5. Reset link styles on the number to show it's usable
+ */
+    [aria-describedby="footnote-label"]::after {
+      content: '[' counter(footnotes) ']';
+      /* 1 */
+      vertical-align: auto;
+      /* 2 */
+      font-size: 1em;
+      /* 3 */
+      margin-left: 2px;
+      /* 4 */
+      color: blue;
+      /* 5 */
+      text-decoration: underline;
+      /* 5 */
+      cursor: pointer;
+      /* 5 */
+      -webkit-user-select: text;
+      -moz-user-select: text;
+      -ms-user-select: text;
+      user-select: text;
+    }
+    [aria-describedby="footnote-label"]::after {
+      -webkit-user-select: text;
+      -moz-user-select: text;
+      -ms-user-select: text;
+      user-select: text;
+    }
+    /**
+ * Resetting the default focused styles on the number
+ */
+    [aria-describedby="footnote-label"]:focus::after {
+      outline: thin dotted;
+      outline-offset: 2px;
+      color: brown;
+      font-weight: bold;
+    }
+    [aria-label="Back to content"] {
+      font-size: 1em;
+    }
+    /**
+ * Highlight target note
+ */
+    footer :target {
+      background: lightgrey;
+    }
+    /**
+ * Visually hidden yet accessible content
+ */
+    .p {
+      color: brown;
+      font-style: italic;
+    }
+    #developedby {
+      font-style: italic;
+      color: brown;
+    }
+  </style>
+</head>
+<body>
+  <center>श्रीसरस्वत्यै नमः</center>
+  <div class="row">
+    <div class="column" style="background-color:#aaa;">
+      <h2>संवैधानिक कानून</h2>
+      <p><b> १. </b> संविधान र संविधानवादका आधारभूत सिद्धान्तहरू</p>
+      <p>
+        <b> २. </b> नेपालको संवैधानिक विकासक्रम
+      </p>
+      <p>
+        <b> ३.</b> नेपालको संविधानका आधारभूत विशेषताहरू
+      </p>
+      <p>
+        <b>४.</b> मौलिक हक, कर्तव्य र संवैधानिक उपचार
+      </p>
+      <p>
+        <b>५.</b> राज्यको दायित्व निर्देशक सिद्धान्त तथा नीतिहरूको औचित्यता
+        र
+        परिसीमा
+      </p>
+               <p>        <b>६.</b> स्वतन्त्र न्यायपालिकाको आधारभूत सिद्धान्तहरू
+      </p>
+      <p>
+        <b> ७.</b> संवैधानिक विषयमा सर्वोच्च अदालतको योगदान
+      </p>
+      <p>
+        <b>८.</b> संवैधानिक इजलास
+      </p>
+      <p> </p>
+      <p>
+        <b>९.</b> सार्वजनिक सरोकारका विषयहरु
+      </p>
+      <p>
+        <b>१०.</b> न्यायीक पुनरावलोकन र यसका सिमाहरु
+      </p>
+      <p>
+        <b> ११.</b> नेपालका संवैधानिक अङ्गहरूः
+      </p>
+      <div class="tab1">
+        <p><b> क. </b>महान्यायाधिवक्ता </p>
+        <p>
+          <b> ख.</b> निर्वाचन आयोग
+        </p>
+        <p>
+          <b> ग.</b> अख्तियार दुरुपयोग अनुसन्धान आयोग
+        </p>
+        <p>
+          <b> घ.</b> राष्ट्रिय मानव अधिकार आयोग
+        </p>
+        <p>
+          <b> ङ.</b> राष्ट्रिय महिला आयोग
+        </p>
+       
+      </div>
+       <p><b> १२.</b> नेपालको संघीयता सम्बन्धी व्यवस्थामा संघ, प्रदेश र
+      स्थानीय      सरकारको      अधिकारक्षेत्र      र      अन्तरसम्ब</p>
+      <p>
+        <b> १३.</b> संविधान संशोधनका आधारभूत सिद्धान्त र प्रकृया
+      </p>
+      <p>
+    </div>
+    <div class="column" style="background-color:#bbb;">
+      <h2>Constitutional Law</h2>
+      <p><b> 1.</b> Basic Principles of Constitution and
+        Constitutionalism</p>
+      <p>
+        <b> 2.</b> Constitutional Development of Nepal
+      </p>
+      <p>
+        <b> 3. </b> The Basic Features of Constitution of Nepal
+        (2072)
+      </p>
+      <p>
+        <b> 4.</b> Fundamental Rights, Duties and Constitutional
+        Remedies
+      </p>
+      <p>
+        <b> 5.</b> Justification and Limitation of Obligation of State,
+        Directive Principles and
+        Policies
+      </p>
+       <p>
+        <b> 6.</b> Basic Principles of Independent Judiciary
+      </p>
+      <p>
+        <b> 7.</b> Contribution to the Supreme Court on Constitutional
+        Matters
+      </p>
+      <p>
+        <b> 8.</b> Constitutional Bench
+      </p>
+      <p>
+        <b>9. </b> Public Interest Litigation
+      </p>
+      <p>
+        <b> 10. </b> Judicial Review
+      </p>
+      <p>
+        <b>11.</b> Constitutional Bodies of Nepal:
+      </p>
+      <div class="tab1">
+        <p><b> a.</b> Attorney General </p>
+        <p>
+          <b> b.</b> Election Commission
+        </p>
+        <p>
+          <b> c.</b> Commission for Investigation of Abuse of Authority
+        </p>
+        <p>
+          <b> d.</b> National Human Rights Commission
+        </p>
+        <p>
+          <b> e.</b> National Commission for Women
+        </p>
+        </div>
+      <p>
+      <b>12.</b> Jurisdiction and Interrelation of Federation, Province &
+      Local Government in
+      Federal Nepal
+      </p>
+      <p>
+        <b> 13.</b> Basic Principle and Process of Amendment of the
+        Constitution
+      </p>
+      <p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="column" style="background-color:#aaa;">
+      <h2>प्रशासनिक कानून</h2>
+      <p><b> १.</b> प्रशासनिक कानूनको प्रकृति, क्षेत्र र स्रोत</p>
+      <p>
+        <b> २.</b> प्रशासनिक कानून र विधिको शासन
+      </p>
+      <p>
+        <b> ३.</b> शक्तिपृथकीकरणको सिद्धान्तः प्रयोग, नियन्त्रण र
+        सन्तुलन
+      </p>
+      <p>
+        <b> ४. </b> प्रत्यायोजित विधायन
+        र
+        यसको
+        परिसीमाहरु
+      </p>
+      <p>
+        <b> ५.</b> प्रशासनिक स्वविवेक
+      </p>
+      <p>
+        <b> ६. </b> प्राकृतिक न्यायको सिद्धान्त
+      </p>
+      <p>
+        <b> ७. </b> प्रशासनिक कार्यको न्यायिक पुनरावलोकन
+      </p>
+      <p>
+        <b>८.</b> अर्धन्यायिक निकाय, प्रशासकीय न्यायाधिकरण तथा प्रशासकीय
+        अदालत
+      </p>
+    </div>
+    <div class="column" style="background-color:#bbb;">
+      <h2>Administrative Law</h2>
+      <p><b> 1.</b> Nature, Scope and Sources of Administrative Law</p>
+      <p>
+        <b> 2. </b> Administrative Law and Rule of Law
+      </p>
+      <p>
+        <b> 3. </b> Principles of Separation of Power: Practice, Control and
+        Balance
+      </p>
+      <p>
+        <b> 4.</b> Delegated Legislation and its Limitation
+      </p>
+      <p>
+        <b> 5. </b> Administrative Discretion
+      </p>
+      <p>
+        <b> 6.</b> Principles of Natural Justice
+      </p>
+      <p>
+        <b> 7.</b> Judicial Review of Administrative Actions
+      </p>
+      <p>
+        <b> 8.</b> Quasi Judicial Bodies, Administrative Tribunals and
+        Administrative Courts
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="column" style="background-color:#aaa;">
+      <h2>अन्तर्राष्ट्रिय कानून</h2>
+      <p><b> १. </b> सार्वजनिक एवं निजी अन्तर्राष्ट्रिय कानूनका प्रकृति,
+        कार्यक्षेत्र र सिद्धान्त
+      </p>
+      <p>
+        <b> २.</b>
+        अन्तर्राष्ट्रिय र राष्ट्रिय कानूनको अन्तरसम्बन्ध एकात्मक र
+        द्वैधात्मक
+      </p>
+      <p>
+        <b> ३. </b> अन्तर्राष्ट्रिय सन्धी र यसको कार्यान्वयन
+      </p>
+      <p>
+        <b> ४. </b> अन्तर्राष्ट्रिय मानवअधिकार र
+        मानवीय
+        कानूनको
+        अन्तरसम्बन्ध, परिसीमा र प्रयोग
+      </p>
+      <p>
+        <b> ५. </b> अन्तर्राष्ट्रिय कानूनको स्थानीय र विश्वव्यापी
+        अधिकारक्षेत्र
+      </p>
+      <p>
+        <b> ६.</b> नेपालको कानूनमा अन्तर्राष्ट्रिय कानूनको स्थान र
+        प्रयोग
+      </p>
+      <p>
+    </div>
+    <div class="column" style="background-color:#bbb;">
+      <h2>International Law</h2>
+      <p><b> 1. </b> Nature, Scope and Principles of Public and Private
+        International Law
+      </p>
+      <p>
+        <b> 2.</b>
+        Interrelationship between International and National Law: Monism and
+        Dualism
+      </p>
+      <p>
+        <b> 3. </b>International Treaty & its Implementation
+      </p>
+      <p>
+        <b> 4. </b> Interrelationship between International Human Rights and
+        Humanitarian Law:
+        its
+        Use & Limitation
+      </p>
+      <p>
+        <b> 5.</b> Local and Universal Jurisdiction of International Law
+      </p>
+      <p>
+        <b> 6. </b>Position of International Law in National Law and its
+        Use
+      </p>
+      <p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="column" style="background-color:#aaa;">
+      <h2>फौजदारी कानून</h2>
+      <p><b> १.</b> फौजदारी न्याय र सजाय सम्बन्धी सामान्य सिद्धान्तहरु
+      </p>
+      <p>
+        <b> २.</b> आपराधिक षड्यन्त्र, उद्योग, दुरुत्साहन र मतियार
+      </p>
+      <p>
+        <b>३.</b> कसुरको गाम्भीर्यता बढाउने तथा घटाउने अवस्थाहरु
+      </p>
+      <p>
+        <b> ४.</b> ज्यान सम्बन्धी कसूर
+      </p>
+      <p>
+        <b> ५.</b> सार्वजनिक शान्ति र न्याय विरुद्धको कसुर
+      </p>
+      <p>
+        <b> ६.</b> सार्वजनिक हित, स्वास्थ्य, सुरक्षा, सुविधा र नैतिकता
+        बिरुद्धका
+        कसुर
+      </p>
+      <p>
+        <b> ७.</b> हातहतियारतथा खरखजाना र विष्फोटक पदार्थसम्बन्धी कसुर
+      </p>
+      <p>
+        <b> ८.</b> राष्ट्रिय तथा सार्वजनिक सम्पदा बिरुद्धका कसुर
+      </p>
+      <p>
+        <b> ९.</b> भेदभाव तथा अन्य अपमानजन्य
+        व्यवहार
+        सम्बन्धी कसुर
+      </p>
+      <p>
+        <b> १०.</b> विवाह सम्बन्धी कसुर (बालविवाह, बहुविवाह)
+      </p>
+      <p>
+        <b> ११. </b> गर्भ संरक्षण बिरुद्धको कसुर
+      </p>
+      <p>
+        <b> १२.</b> कुटपिट वा अङ्गभङ्ग सम्बन्धी कसुर
+      </p>
+      <p>
+        <b> १३.</b> गैरकानूनी थुना सम्बन्धी कसुर
+      </p>
+      <p>
+        <b> १४. </b> व्यक्ति बेपत्ता पार्ने सम्बन्धी कसुर
+      </p>
+      <p>
+        <b> १५. </b> अपहरण वा शरीरबन्धक सम्बन्धी कसुर
+      </p>
+      <p>
+        <b> १६. </b> यौनजन्य कसूर
+      </p>
+      <div class="tab1">
+        <p><b> क. </b> जवर्जस्ती करणी</p>
+        <p>
+          <b> ख.</b> हाडनाता करणी
+        </p>
+        <p>
+          <b> ग.</b> यौन दुर्व्यवहार
+        </p>
+        <p>
+          <b> घ.</b> वालयौन दूरुपयोग
+        </p>
+        </div>
+      <p>
+      <b> १७.</b> चोरी तथा डाँका सम्बन्धी कसुर</p>
+      <p>
+        <b> १८.</b> ठगी, आपराधिक विश्वासघात तथा आपराधिक लाभ (एक्सटर्सन)
+        सम्बन्धी
+        कसूर
+      </p>
+      <p>
+        <b> १९.</b>
+        वैयक्तिक
+        गोपनियता
+        तथा प्रतिष्ठा विरुद्धको कसूर
+      </p>
+      <p>
+        <b>२०.</b> गाली बेइज्जती सम्बन्धी कसुर
+      </p>
+      <p>
+        <b> २१.</b> नापतौल सम्बन्धी कसुर
+      </p>
+      <p>
+        <b> २२.</b> बीमा सम्बन्धी कसूर
+      </p>
+      <p>
+        <b> २३. </b> वैकिङ्ग कसूर सम्बन्धी अपराध
+      </p>
+      <p>
+        <b> २४.</b> विद्युतीय अपराध (Cyber Crime )
+      </p>
+      <p>
+        <b> २५.</b> सवारी सम्बन्धी कसुर
+      </p>
+      <p>
+        <b> २६.</b> लैङिक हिंसा सम्बन्धी कसुर
+      </p>
+      <p>
+        <b> २७.</b> संगठित अपराध (मानव बेचबिखन, लागु औषध र सम्पत्ति
+        शुद्धिकरण)सम्बन्धी कसुर
+      </p>
+      <p>
+        <b> २८.</b> भ्रष्टाचार सम्बन्धी कसूर
+      </p>
+      <p>
+    </div>
+    <div class="column" style="background-color:#bbb;">
+      <h2> Criminal Law</h2>
+      <p><b> 1.</b> General Principles Regarding Criminal Justice and
+        Punishment </p>
+      <p>
+        <b> 2. </b> Criminal Conspiracy, Attempt, Abetment and
+        Accomplishment
+      </p>
+      <p>
+        <b> 3. </b> Aggravating and Mitigating Factor of an Offence
+      </p>
+      <p>
+        <b> 4. </b> Homicide
+      </p>
+      <p>
+        <b> 5.</b> Offence against Public peace and justice
+      </p>
+      <p>
+        <b> 6.</b> Offences against Public Interest, Health, Safety,
+        Convenience and Morals
+      </p>
+      <p>
+        <b> 7.</b> Offences Relating to Arms, Ammunitions and Explosives
+      </p>
+      <p>
+        <b> 8.</b> Offences against National and Public Heritages
+      </p>
+      <p>
+        <b> 9. </b> Offences Relating to Discrimination and Other Degrading
+        Treatment
+      </p>
+      <p>
+        <b> 10.</b> Offences Relating to Marriage (child marriage,
+        polygamy)
+      </p>
+      <p>
+        <b> 11.</b> Offences against Protection of Pregnancy
+      </p>
+      <p>
+        <b> 12.</b> Offences Relating to Hurt or Grievous Hurt
+      </p>
+      <p>
+        <b> 13. </b> Offences Relating to Unlawful Detention
+      </p>
+      <p>
+        <b> 14.</b> Offences Relating to Enforced Disappearance
+      </p>
+      <p>
+        <b> 15.</b> Offences Relating to Kidnapping or Taking of Hostages
+      </p>
+      <p>
+        <b> 16.</b> Sexual
+        Offences
+      </p>
+      <div class="tab1">
+        <p><b> a. </b> Rape</p>
+        <p>
+          <b> b.</b> Incest
+        </p>
+        <p>
+          <b> c.</b> Sexual Abuse
+        </p>
+        <p>
+          <b> d. </b> Child Sexual Abuse
+        </p>
+        </div>
+      <p>
+      <b> 17.</b> Offenses related to Theft and Robbery</p>
+      <p>
+        <b> 18.</b> Offences Relating to Cheating, Criminal Breach of Trust
+        and
+        Extortion
+      </p>
+      <p>
+        <b> 19. </b> Offences against Individual Privacy and
+        Prestige
+      </p>
+      <p>
+        <b> 20.</b> Offence Relating to Defamation
+      </p>
+      <p>
+        <b>21.</b> Offences Relating to Weights and Measures
+      </p>
+      <p>
+        <b> 22.</b> Offences Related to Insurance
+      </p>
+      <p>
+        <b> 23. </b> Banking Offences
+      </p>
+      <p>
+        <b> 24. </b> Cyber ​​Crime
+      </p>
+      <p>
+        <b> 25.</b> Offences related to Vehicle Traffic
+      </p>
+      <p>
+        <b> 26. </b> Offence Related to Gender Violence
+      </p>
+      <p>
+        <b> 27.</b> Organized crime (Human Trafficking, Drug Trafficking and
+        Money Laundering)
+      </p>
+      <p>
+        <b>28.</b> Offence related to Corruption
+      </p>
+      <p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="column" style="background-color:#aaa;">
+      <h2>देवानी कानून</h2>
+      <p><b> १.</b> देवानी कानूनका सामान्य सिद्धान्त </p>
+      <p>
+        <b> २.</b> व्यक्ति सम्बन्धी व्यवस्था
+      </p>
+      <p>
+        <b> ३.</b> पारिवारिक कानून
+      </p>
+      <div class="tab1">
+        <p><b>अ.</b> विवाह र सम्बन्ध विच्छेद सम्बन्धी व्यवस्था</p>
+        <p>
+          <b> आ.</b> मातृक तथा पैत्रिक अख्तियारी
+          सम्बन्धी
+          व्यवस्था
+        </p>
+        <p>
+          <b> इ.</b> सरक्षकत्व र माथवर सम्बन्धी व्यवस्था
+        </p>
+        <p>
+          <b> ई.</b> धर्मपुत्र तथा धर्मपुत्रीसम्बन्धी व्यवस्था
+        </p>
+        <p>
+          <b> उ. </b> आमा, बाबु तथा छोरा, छोरीको
+          सम्बन्ध
+          सम्बन्धी
+          व्यवस्था
+        </p>
+        <p>
+          <b> ऊ.</b> अंशवण्डा सम्बन्धी व्यवस्था
+        </p>
+        <p>
+          <b> ए.</b> अपुताली सम्बन्धी व्यवस्था
+        </p>
+        </div>
+      <p>
+      <b> ४.</b> सम्पत्ति सम्बन्धी</p>
+      <div class="tab1">
+        <p><b>अ. </b> सम्पत्तिका सिद्धान्त र प्रकारहरु </p>
+        <p>
+          <b> आ. </b> स्वामित्व र भोगाधिकार सम्बन्धी
+          व्यवस्था
+        </p>
+        <p>
+          <b> इ.</b> लिखत पारित सम्बन्धी व्यवस्था
+        </p>
+        <p>
+          <b> ई.</b> सम्पत्तिको उपभोग, हस्तान्तरण तथा प्राप्ति सम्बन्धी
+          व्यवस्था
+        </p>
+        <p>
+          <b> उ.</b> जग्गा
+          आवाद, भोगचलन
+          तथा
+          दतां सम्बन्धी व्यवस्था
+        </p>
+        <p>
+          <b> ऊ.</b> गुठी सम्बन्धी व्यवस्था
+        </p>
+        <p>
+          <b> ए. </b>
+          फलोपभोग सम्बन्धी व्यवस्था
+        </p>
+        <p>
+          <b> ऐ.</b> सुविधाभार सम्बन्धी व्यवस्था
+        </p>
+        <p>
+          <b> ओ.</b> घर बहाल सम्बन्धी व्यवस्था
+        </p>
+        <p>
+          <b> औ.</b> दानवकस सम्बन्धी व्यवस्था
+        </p>
+        <p>
+          <b> अं.</b> अचल सम्पत्ति बन्धकी र हकसफा सम्बन्धी व्यवस्था
+        </p>
+        <p>
+          <b>अः.
+          </b> लेनदेन
+          व्यवहार
+          सम्बन्धी
+          व्यवस्था
+        </p>
+        <p> </p>
+        </div>
+      <p>
+      <b> ५. </b> दुष्कृति सम्बन्धी व्यवस्था</p>
+      <p>
+        <b>६.</b>
+        क्षतिपूर्ति सम्बन्धी व्यवस्था
+      </p>
+      <p>
+    </div>
+    <div class="column" style="background-color:#bbb;">
+      <h2>Civil Law</h2>
+      <p><b> 1. </b> General Principle of Civil Law </p>
+      <p>
+        <b> 2.</b> Provision Relating to Person
+      </p>
+      <p>
+        <b> 3.</b>
+        Family Law
+      </p>
+      <div class="tab1">
+        <p><b> a. </b> Provisions Relating to Marriage & Divorce</p>
+        <p>
+          <b> b.</b> Provisions Relating to
+          Maternal and Paternal Authority
+          System
+        </p>
+        <p>
+          <b> c.</b> Provisions Relating to Guardianship & Curatorship
+        </p>
+        <p>
+          <b> d. </b> Provisions Relating to Adoption
+        </p>
+        <p>
+          <b> e.</b> Provisions Relating to Relationship of Parents and
+          Children
+        </p>
+        <p>
+          <b> f. </b> Provisions Relating to Partition
+        </p>
+        <p>
+          <b> g. </b> Provisions Relating to Succession
+        </p>
+        </div>
+      <p>
+      <b> 4.</b> Relating to Property </p>
+      <div class="tab1">
+        <p><b> a. </b> Principles Related to Property & Types of
+          Property </p>
+        <p>
+          <b> b. </b> Provisions Relating to Ownership and Possession
+        </p>
+        <p>
+          <b> c.</b> Instrument Passing Arrangement
+        </p>
+        <p>
+          <b> d. </b> Provision related to the use, transfer and
+          aquisition of
+          Property
+        </p>
+        <p>
+          <b> e.</b> Provisions Relating to Cultivation, Possession and
+          Registration of Land
+        </p>
+        <p>
+          <b>f.</b> Provisions Relating to Trusts
+        </p>
+        <p>
+          <b> g.</b> Provisions Relating to Usufruct
+        </p>
+        <p>
+          <b> h. </b> Provisions Relating to Servitudes
+        </p>
+        <p>
+          <b> i.</b> Provisions Relating to House
+          Rent
+        </p>
+        <p>
+          <b> j.</b> Provisions Relating to Gift and Donation
+        </p>
+        <p>
+          <b> k. </b> Provisions Relating to Mortgage & Pre-emption of
+          Immovable
+          Property
+        </p>
+        <p>
+          <b> l.</b> Provisions Relating to Transactions
+        </p>
+        <p> </p>
+        </div>
+      <p>
+      <b> 5.</b> Provision Relating to Tort</p>
+      <p>
+        <b> 6.</b> Provision relating to Compensation
+      </p>
+      <p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="column" style="background-color:#aaa;">
+      <h2> वाणिज्य कानून</h2>
+      <p><b> १.</b> प्राकृतिक र कानूनी व्यक्ति</p>
+      <p>
+        <b> २.</b>
+        प्राइभेट / पब्लिक र मुनाफा वितरण नगर्ने कम्पनीको स्थापना, दर्ता र
+        संचालन
+      </p>
+      <p>
+        <b> ३. </b>पेटेन्ट, डिजाइन र ट्रेडमार्क
+      </p>
+      <p>
+        <b> ४.</b> करार सम्बन्धी व्यवस्था
+      </p>
+      <p>
+        <b> ५.</b> श्रम सम्बन्धी कानून
+      </p>
+      <p>
+        <b> ६. </b> विवाद समाधान सम्बन्धी वैकल्पिक उपायहरु
+      </p>
+      <p>
+        <b> ७.</b> कर सम्बन्धी कानूनका सामान्य सिद्धान्तहरु
+      </p>
+      <p>
+        <b> ८.</b> वातावरण संरक्षण सम्बन्धी कानून
+      </p>
+      <p>
+    </div>
+    <div class="column" style="background-color:#bbb;">
+      <h2> Commercial Law</h2>
+      <p><b> 1.</b> Natural and legal person </p>
+      <p>
+        <b> 2.</b> Establishment, registration and operation of private / public and
+        non-profit company
+      </p>
+      <p>
+        <b> 3.</b> Patents, designs and trademarks
+      </p>
+      <p>
+        <b> 4. </b> Provision related to Contract
+      </p>
+      <p>
+        <b> 5.</b> Labor law
+      </p>
+      <p>
+        <b> 6. </b> Alternative Dispute Resolution Measures
+      </p>
+      <p>
+        <b> 7. </b> General Principles of Tax Law
+      </p>
+      <p>
+        <b> 8.</b> Law related to Environmental Protection
+      </p>
+      <p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="column" style="background-color:#aaa;">
+      <h2> प्रमाण कानून</h2>
+      <p><b> १. </b> ठहर गर्नु पर्ने कुरा र सम्बद्ध कुरा </p>
+      <p>
+        <b> २.</b> प्रमाण बुझ्न नपर्ने कुराहरु
+      </p>
+      <p>
+        <b> ३. </b> अदालतले जानकारी लिने र अनुमान गर्ने कुराहरू
+      </p>
+      <p>
+        <b> ४.</b> प्रमाणमा लिन हुने र नहुने कुराहरू
+      </p>
+      <p>
+        <b> ५. </b> प्रमाणको भार
+      </p>
+      <p>
+        <b></b>
+        <b> ६.</b> प्रमाणको प्रस्तुती र परीक्षण
+      </p>
+      <div class="tab1">
+        <p><b> क.</b> लिखित र मौखिक प्रमाण </p>
+        <p>
+          <b> ख. </b> साक्षी प्रमाण
+        </p>
+        <p>
+          <b> ग.</b> दसी प्रमाण
+        </p>
+        <p>
+          <b> घ. </b> विशेषज्ञको राय
+        </p>
+        </div>
+      <p>
+      <b> ७. </b> मृत्युकालीन घोषणाको प्रमाणिक महत्व</p>
+      <p>
+        <b> ८.</b> प्रमाणमा प्रविधिको प्रयोग (पोलिग्राफ, श्रव्यदृष्यको
+        प्रमाणिक
+        मूल्यांकन)
+      </p>
+      <p>
+        <b> ९.</b>
+        विवन्धन
+      </p>
+      <p>
+    </div>
+    <div class="column" style="background-color:#bbb;">
+      <h2> Evidence Law</h2>
+      <p><b> 1.</b> Fact in Issue & Relevent Fact</p>
+      <p>
+        <b>2.</b> Facts not required to examine the evidence
+      </p>
+      <p>
+        <b> 3. </b> Facts to be taken into judicial notice and facts to be
+        presumed by the
+        court
+      </p>
+      <p>
+        <b> 4.</b> Facts to be taken and not to be taken as evidence
+      </p>
+      <p>
+        <b> 5. </b> The burden of proof
+      </p>
+      <p>
+        <b> 6. </b> Presentation & Examination of evidence
+      </p>
+      <div class="tab1">
+        <p><b> a.</b> Written and Oral evidence</p>
+        <p>
+          <b> b. </b> Witness Evidence
+        </p>
+        <p>
+          <b> c.</b> Material (Dasi) evidence
+        </p>
+        <p>
+          <b> d.</b> Expert opinion
+        </p>
+        </div>
+      <p>
+      <b> 7. </b> Evidential value of Dying Declaration</p>
+      <p>
+        <b> 8.</b> Use of evidence technology (polygraph, authentic
+        assessment
+        of
+        audio-visual)
+      </p>
+      <p>
+        <b> 9.</b> Estoppel
+      </p>
+      <p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="column" style="background-color:#aaa;">
+      <h2>कार्यविधि कानून</h2>
+      <p><b>१.</b> देवानी कार्यविधि कानूनका सामान्य सिद्धान्तहरु</p>
+      <p>
+        <b> २. </b> रिट निवेदन सम्बन्धी कार्यविधि :
+      </p>
+      <div class="tab1">
+        <p><b> क.</b> जिल्ला अदालत, उच्च अदालत र सर्वोच्च अदालतमा
+          दर्ता हुने रिट निवेदन</p>
+        <p>
+          <b> ख.</b> बिलम्बको सिद्धान्त
+        </p>
+        <p>
+          <b> ग.</b> अन्तरिम आदेश
+        </p>
+        </div>
+      <p>
+      <b> ३. </b> निषेधाज्ञा सम्बन्धी निवेदन र अन्तरिम आदेश</p>
+      <p>
+        <b> ४. </b> हकदैया सम्बन्धी व्यवस्था
+      </p>
+      <p>
+        <b> ५.</b>
+        अधिकारक्षेत्र सम्बन्धी व्यवस्था
+      </p>
+      <div class="tab1">
+        <p><b> क.</b> अधिकार क्षेत्रको अवधारणा र सिद्धान्त</p>
+        <p>
+          <b>ख.</b> जिल्ला अदालतको अधिकार क्षेत्र
+        </p>
+        <p>
+          <b> ग.</b> उच्च अदालतको अधिकार क्षेत्र
+        </p>
+        <p>
+          <b> घ.</b> सर्वोच्च अदालतको साधारण र असाधारण अधिकार
+        </p>
+        <p>
+          <b> ङ. </b> विशेष अदालतको अधिकार
+          क्षेत्र
+        </p>
+        <p>
+          <b> च. </b> बहिक्षैत्रिय अधिकार क्षेत्र
+        </p>
+        </div>
+      <p>
+      <b> ६. </b> अदालती शुल्क सम्बन्धी व्यवस्था </p>
+      <p>
+        <b> ७.</b> फिराद तथा दावी प्रस्तुत सम्बन्धी व्यवस्था
+      </p>
+      <p>
+        <b> ८.</b> प्रतिउत्तर र प्रतिदावी सम्बन्धी व्यवस्था
+      </p>
+      <p>
+        <b> ९.</b> दरपीठ सम्बन्धी व्यवस्था
+      </p>
+      <p>
+        <b> १०.</b> हदम्याद सम्वन्धी व्यवस्था
+      </p>
+      <p>
+        <b> ११.</b> म्याद र तारिख सम्बन्धी व्यवस्था
+      </p>
+      <p>
+        <b> १२.</b> वारिस सम्बन्धी व्यवस्था:
+      </p>
+      <div class="tab1">
+        <p><b> क.</b> साधारण वारिस</p>
+        <p>
+          <b>ख.</b> अधिकृत वारिस
+        </p>
+        <p>
+          <b> ग. </b> वारिसबदर हुन सक्ने अवस्था
+        </p>
+        <p> </p>
+        </div>
+      <p>
+      <b> १३.</b> सामान्य, संक्षिप्त
+      र विशेष कार्यविधि</p>
+      <p>
+        <b> १४. </b> अन्तरकालिन वा अन्तरिम आदेश सम्बन्धी व्यवस्था
+      </p>
+      <p>
+        <b> १५. </b> मुलतवी तथा स्थानान्तरण सम्बन्धी व्यवस्था
+      </p>
+      <p>
+        <b> १६. </b> नजीर सम्बन्धी व्यवस्था
+      </p>
+      <p>
+        <b> १७. </b> सरकारवादी फौजदारी मुद्दाको कार्यविधि
+      </p>
+      <div class="tab1">
+        <p><b> क.</b> कसूरको सूचना वा जाहेरी सम्बन्धी व्यवस्था</p>
+        <p>
+          <b> ख. </b> अनुसन्धानमा अपनाउनु पर्ने
+          प्रक्रिया सम्बन्धी व्यवस्था
+        </p>
+        <p>
+          <b> ग.</b> पक्राउ गर्ने, पक्राउ पुर्जी र समाह्वान जारी
+          गर्ने
+          कार्यविधि
+        </p>
+        <p>
+          <b> घ. </b> पीडितको बयान प्रमाणित सम्बन्धी व्यवस्था
+        </p>
+        <p>
+          <b>ङ.</b> म्याद थपका आधारहरू
+        </p>
+        <p>
+          <b> च. </b> अभियोगपत्र दायर गर्दा अपनाउनुपर्ने कार्यविधि
+        </p>
+        <p>
+          <b> छ. </b> मुद्दाको प्रारम्भिक कारवाही सम्बन्धी व्यवस्था
+        </p>
+        <p>
+          <b> ज. </b> प्रतिवादीको अदालत समक्ष
+          बयान
+        </p>
+        <p>
+          <b> झ.</b> थुनछेक, धरौट तथा जमानत सम्बन्धी व्यवस्था
+        </p>
+        <p>
+          <b> ञ. </b> थुनछेकको आदेश उपर माथिल्लो अदालतमा निवेदन दिन सकिने
+          कानूनी
+        </p>
+        </div>
+      <p>
+      <b> १८. </b> खुला इजलास र
+      बन्द इजलास सम्बन्धी व्यवस्था</p>
+      <p>
+        <b> १९. </b> मुद्दा फिर्ता लिने, मिलापत्र र मेलमिलाप
+        सम्बन्धी व्यवस्था
+      </p>
+      <p>
+        <b> २०. </b>सुनुवाइ (Hearing), अभिवचन (Pleading) र फैसला सम्बन्धी
+        व्यवस्था
+      </p>
+      <p>
+        <b> २१.</b> फैसला वा अन्तिम आदेश र फैसला कार्यान्वयन सम्बन्धी
+        व्यवस्था
+      </p>
+      <p>
+        <b> २२.</b> पुनरावेदन सम्बन्धी व्यवस्था
+      </p>
+      <p> </p>
+      <p>
+        <b> २३. </b> मुद्दा दोहोऱ्याउने र पुनरावलोकन सम्बन्धी
+        व्यवस्था
+      </p>
+      <p> </p>
+      <p>
+        <b> २४.</b> फैसला र अन्तिम आदेश कार्यान्वयन सम्बन्धी
+        व्यवस्था
+      </p>
+      <p>
+        <b> २५.</b> पारस्परिक कानूनी सहायता र सुपुर्दगी सम्बन्धी
+        व्यवस्था
+      </p>
+      <p> <b> २६. </b>
+        एमिकस क्युरी
+        सम्बन्धी व्यवस्था</p>
+      <p>
+        <b> २७. </b> कानूनी सहायता सम्बन्धी व्यवस्था
+    </div>
+    <div class="column" style="background-color:#bbb;">
+      <h2>Procedural Law</h2>
+      <p><b> 1.</b> General Principles of Civil Procedure Law</p>
+      <p>
+        <b> 2. </b> Writ Procedure :
+      </p>
+      <div class="tab1">
+        <p><b> a.</b> Writ to be filed in District Court, High Court and
+          Supreme Court
+        </p>
+        <p>
+          <b> b.</b> Principle of Laches
+        </p>
+        <p>
+          <b> c. </b> Interim Order
+        </p>
+        <p> </p>
+        </div>
+      <p>
+      <b> 3.</b> Injunction Application and Interim Order</p>
+      <p>
+        <b> 4. </b> Provision related to Locus Standi
+      </p>
+      <p>
+        <b> 5.</b>
+        Provision related to Jurisdiction
+      </p>
+      <div class="tab1">
+        <p><b> a. </b> Concept and
+          Doctrine of Jurisdiction</p>
+        <p>
+          <b> b . </b> Jurisdiction of District Court
+        </p>
+        <p>
+          <b> c. </b> Jurisdiction of the High Court
+        </p>
+        <p>
+          <b> d. </b> Ordinary and Extraordinary Jurisdiction of the
+          Supreme
+          Court
+        </p>
+        <p>
+          <b> e.</b>
+          Jurisdiction of Special Court
+        </p>
+        <p>
+          <b> f. </b> Extra-territorial Jurisdiction
+        </p>
+        <p> </p>
+        </div>
+      <p>
+      <b> 6.</b> Arrangement regarding Court Fee
+      </p>
+      <p>
+        <b>7.</b> Provision regarding filing of Complaint and Claims
+      </p>
+      <p>
+        <b> 8. </b> Statement of Defence and Counter Claim
+      </p>
+      <p>
+        <b> 9.</b> Provision regarding Refusal
+      </p>
+      <p> </p>
+      <p>
+        <b> 10.</b> Doctrine of Limitation
+      </p>
+      <p>
+        <b> 11. </b> Provision regarding Time-limit &
+        Date of Presence
+      </p>
+      <p>
+        <b> 12. </b> Provision regarding Attorney:
+      </p>
+      <div class="tab1">
+        <p><b> a. </b> Ordinary Attorney</p>
+        <p>
+          <b> b. </b> Authorized Attorney
+        </p>
+        <p>
+          <b> c. </b> Revocation of Attorney
+        </p>
+        <p> </p>
+        </div>
+      <p>
+      <b> 13.</b> General, Summary & Special Procedure
+      </p>
+      <p>
+        <b> 14.</b> Provision regarding Interloculatory & Interim
+        Order
+      </p>
+      <p>
+        <b> 15.</b> Provision regarding Postponment and Transfer of
+        Case
+      </p>
+      <p>
+        <b> 16.</b> Provision regarding Precedent
+      </p>
+      <p> <b> 17.</b>
+        Proceedings of State
+        Criminal Case</p>
+      <div class="tab1">
+        <p><b> a. </b> Information or Complain related to the Offence</p>
+        <p>
+          <b> b.</b> Procedures to be
+          followed for investigation
+        </p>
+        <p>
+          <b> c.</b> Provision related to Arrest & to release Arrest
+          note and Summon
+        </p>
+        <p>
+          <b> d. </b> Arrangement for authenticating the statement of the
+          victim
+        </p>
+        <p>
+          <b> e. </b> Basis for
+          Extension of Time-Limit
+        </p>
+        <p>
+          <b> f.</b> Procedures to be followed while filing the Charge
+          Sheet
+        </p>
+        <p>
+          <b> g. </b> Preliminary proceedings for the Case
+        </p>
+        <p>
+          <b> h.</b>
+          Defendent's Statement before the Court
+        </p>
+        <p>
+          <b> i.</b> Jail-Bail, Security and Guarantee arrangements
+        </p>
+        <p>
+          <b>j. </b> Legal Provisions to file the application against Jail-Bail
+          Order in Higher
+          Court
+        </p>
+        <p> </p>
+        </div>
+      <p>
+      <b> 18.</b> Open Bench & Incamera Hearing</p>
+      <p>
+        <b>19.</b> Provisions related to Withdrawl of Case, Mediation and
+        Agreement Paper
+      </p>
+      <p>
+        <b> 20. </b> Provision related to Hearing, Pleading and Judgment
+      </p>
+      <p>
+        <b> 21. </b> Provisions regarding Implementation of Final Order and
+        Decision
+      </p>
+      <p>
+        <b> 22.</b> Provision related to Appeal
+      </p>
+      <p>
+        <b> 23. </b> Provision related to revision and review of
+        case
+      </p>
+      <p>
+        <b> 24. </b> Implementation of Decision and Final Order
+      </p>
+      <p>
+        <b>25.</b> Mutual Legal Assistance and Extradiction
+      </p>
+      <p>
+        <b> 26.</b> Provision regarding Amicus
+        Curiae
+      </p>
+      <p>
+        <b> 27.</b> Provision related to Legal Aid
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="column" style="background-color:#aaa;">
+      <h2>नेपाल का.व्य.परिषद र का.व्य. आचार संहिता</h2>
+      <p><b> १. </b> नेपाल कानून व्यवसायी परिषद् र नेपाल बार एशोसियसनको
+        सम्बन्ध,
+        भूमिका र
+        भिन्नता</p>
+      <p>
+        <b> २. </b> नेपाल कानून व्यवसायी परिषद्‌को काम, कर्तव्य र अधिकार
+      </p>
+      <p>
+        <b> ३. </b> कानून व्यवसायी, कानून व्यवसायीको भूमिका र आचार संहिता
+        सम्बन्धी
+        व्यवस्थाहरू
+      </p>
+      <div class="tab1">
+        <p><b> क. </b> नेपाल कानून व्यवसायी परिषद् ऐन, २०५०</p>
+        <p>
+          <b> ख. </b> कानून व्यवसायीको आचार संहिता, २०५१
+        </p>
+        <p>
+          <b> ग. </b> कानून व्यवसायीको कार्यालय दर्ता र संचालन नियमावली,
+          २०६९
+        </p>
+        <p>
+          <b> घ. </b> नेपाल कानून व्यवसायी परिषद्‌को अनुशासन समिति (कार्य
+          व्यवस्था) नियमावली,
+          २०५८
+        </p>
+        <p>
+          <b> ङ. </b> कानून व्यवसायीको भूमिका सम्बन्धी संयुक्त
+          राष्ट्रसंघका
+          आधारभूत
+          सिद्धान्तहरू,
+          १९९०
+        </p>
+        </div>
+      <p>
+      <b> ४. </b> वैतनिक कानून व्यवसायी सम्बन्धित निर्देशिका, २०७२</p>
+      <p>
+        <b> ५. </b> सरकारी वकीलको आचारसंहिता, २०७५
+      </p>
+      <p>
+        <b> ६. </b> न्यायाधीशको आचारसंहिता २०७४
+      </p>
+      <p>
+    </div>
+    <div class="column" style="background-color:#bbb;">
+      <h2> Nepal Bar Council & Code of Ethics for Legal Practitioners</h2>
+      <p><b> 1. </b> Relations, Roles and Differences of Nepal Bar Council
+        and
+        Nepal Bar Association </p>
+      <p>
+        <b> 2. </b> Functions, Duties and Powers of Nepal Bar Council
+      </p>
+      <p>
+        <b> 3. </b>Law Practitioners, the role of Law Practitioners and
+        Provisions related to
+        the Code of Conduct
+      </p>
+      <div class="tab1">
+        <p><b> a. </b> Nepal Law Practitioners Council Act, 2050 </p>
+        <p>
+          <b> b. </b> Code of Conduct for Law Practitioners, 2051
+        </p>
+        <p>
+          <b> c. </b> Law Practitioner's Office Registration and Operation
+          Rules, 2069
+        </p>
+        <p>
+          <b> d. </b> Nepal Law Practitioners' Disciplinary Committee
+          (Working
+          Arrangements)
+          Rules,
+          2058
+        </p>
+        <p>
+          <b> e. </b> Fundamental Principles of the United Nations on the
+          Role
+          of Law
+          Practitioners,
+          1990
+        </p>
+      </div>
+      <b> 4. </b> Guidelines on Paid Law Practitioners, 2072 </p>
+      <p>
+        <b> 5. </b> Code of Conduct for Public Prosecutors, 2075
+      </p>
+      <p>
+        <b> 6. </b> Code of Conduct for Judges, 2074
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="column" style="background-color:#aaa;">
+      <h2>मिसिल अध्ययन र लिखतका मस्यौदा</h2>
+      <p><b> १. </b> कानूनी प्रयोजनको भाषिक ज्ञान</p>
+      <p>
+        <b> २. </b> लिखतको मस्यौदाः
+      </p>
+      <div class="tab1">
+        <p><b> क. </b> रिट निवेदन</p>
+        <p>
+          <b> ख. </b> लिखित जवाफ
+        </p>
+        <p>
+          <b> ग. </b> निषेधाज्ञाको निवेदन
+        </p>
+        <p>
+          <b> घ. </b> जाहेरी दरखास्त
+        </p>
+        <p>
+          <b> ङ. </b> प्रतिवादीको बयान
+        </p>
+        <p>
+          <b> च.</b> अभियोग पत्र
+        </p>
+        <p>
+          <b> छ. </b> थुनछेक आदेश
+        </p>
+        <p>
+          <b> ज. </b> फिरादपत्र
+        </p>
+        <p>
+          <b> झ. </b> प्रतिउत्तरपत्र
+        </p>
+        <p>
+          <b> ञ. </b> वारिसनामा
+        </p>
+        <p>
+          <b> ट. </b> पुनरावेदनपत्र
+        </p>
+        <p>
+          <b> ठ. </b> मुद्दा दोहोऱ्याउनका लागि दिइने निवेदनपत्र
+        </p>
+        <p>
+          <b> ड. </b> मुद्दा पुनरावलोकनको निवेदनपत्र
+        </p>
+        <p>
+          <b> ढ. </b> बहस नोट
+        </p>
+        <p>
+          <b> ण. </b> मिलापत्रको दरखास्त
+        </p>
+        <p>
+          <b> त.</b> म्याद, तारिख थमाउने निवेदन
+        </p>
+        <p>
+          <b> थ. </b> रोक्का तथा बेरितको आदेश बदर सम्बन्धी निवेदन
+        </p>
+        <p>
+          <b> द.</b> फैसला कार्यान्वयनका लागि दिइने दरखास्त
+        </p>
+      </div>
+      <p>
+        <b> ३. </b> मिसिलसँग सम्बन्धित विषयवस्तुको ज्ञान
+      </p>
+      <div class="tab1">
+        <p><b> क. </b> सोधपुछ, जिरह र पुनः सोधपुछका प्रश्नहरू </p>
+        <p>
+          <b> ख. </b> लिखत प्रमाण र यसको परीक्षण
+        </p>
+        <p>
+          <b> ग. </b> फैसलामा लिइएका आधारहरु
+        </p>
+        </div>
+      <p>
+      <div class="tab2">
+        <b> अ. </b> मुद्दाको तथ्यगत प्रश्न र कानूनी प्रश्न</p>
+        <p>
+          <b> आ. </b> सम्बद्ध
+          प्रमाणहरू
+        </p>
+        <p>
+          <b> इ. </b>सर्वोच्च अदालतबाट प्रतिपादित सिद्धान्त
+        </p>
+      </div>
+    </div>
+    <div class="column" style="background-color:#bbb;">
+      <h2>Case File Study and Drafting of Legal Instruments</h2>
+      <p><b> 1. </b> Linguistic Knowledge for Legal Purposes</p>
+      <p>
+        <b> 2. </b> Drafting of Instruments:
+      </p>
+      <div class="tab1">
+        <p><b> a. </b> Writ Petition</p>
+        <p>
+          <b> b. </b> Written Statement
+        </p>
+        <p>
+          <b> c. </b> Injunction Application
+        </p>
+        <p>
+          <b> d. </b> First Information Report (FIR)
+        </p>
+        <p>
+          <b> e. </b> Statement to Defendents
+        </p>
+        <p>
+          <b> f. </b> Charge Sheet
+        </p>
+        <p>
+          <b> g. </b> Jail-Bail Hearing
+        </p>
+        <p>
+          <b> h. </b> Plaint
+        </p>
+        <p>
+          <b> i. </b> Statement of Defence
+        </p>
+        <p>
+          <b> j. </b> Attorney Deed
+        </p>
+        <p>
+          <b> k. </b> Appeal Statement
+        </p>
+        <p>
+          <b> l.</b> Case Revision Application
+        </p>
+        <p>
+          <b> m. </b> Case Review Application
+        </p>
+        <p>
+          <b> n. </b> Pleading Note
+        </p>
+        <p>
+          <b> o.</b> Mediation Application
+        </p>
+        <p>
+          <b> p. </b> Application for the extention of date of presence &
+          time- limit
+        </p>
+        <p>
+          <b> q. </b> Application for Rokka (Hold) and overturning of
+          improper
+          order
+        </p>
+        <p>
+          <b> r. </b> Application for the Implementation of Court Decision
+        </p>
+              </div>
+      <p>
+      <b> 3. </b> Knowledge regarding subject matter of Case File</p>
+      <div class="tab1">
+        <p><b> a. </b> Examination, cross-examined and re-examination </p>
+        <p>
+          <b> b. </b> Written Evidence & its Examination
+        </p>
+        <p>
+          <b> c. </b> Ratio-Decidendi
+        </p>
+        </div>
+      <p>
+      <div class="tab2">
+        <b> i. </b> Question of fact & question of law in a case</p>
+        <p>
+          <b> ii. </b> Relevent
+          Evidence
+        </p>
+        <p>
+          <b> iii. </b> The doctrine propounded by the Supreme
+          Court
+        </p>
+        </div>
+      <p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="column" style="background-color:#aaa;">
+      <h2>नमूनाको लागि</h2>
+      <p>कखग</p>
+    </div>
+    <div class="column" style="background-color:#bbb;">
+      <h2> Only for Sample</h2>
+      <p>xyz <a href="#fn20230209T2217" aria-describedby="footnote-label" id="fn20230209T2218"></a> Continue your text
+        here</p>
+    </div>
+  </div>
+  </div>
+  <footer>
+    <h2 class="visually-hidden" id="footnote-label">Endnotes</h2>
+    <ol>
+      <li id="fn20230209T2217">Type footnote here. <a href="#fn20230209T2218" aria-label="Back to content">↩</a></li>
+    </ol>
+  </footer>
+  <p id="developedby"><u><b>Developed by:</b></u><br>
+  Debaka Timilsina (M.A, M.Ed; LL.B) <br>
+  Shiva Prasad Acharya (M.Sc.; LL.M)<br>
+  श्रीपञ्चमि, २०७९</p>
+</body>
+</html>
