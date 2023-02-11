@@ -1,43 +1,52 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <style>
     .row {
       display: flex;
       flex-wrap: nowrap;
     }
+
     .column {
       flex: 50%;
       padding: 10px;
       text-align: left;
     }
+
     p {
       word-wrap: break-word;
       text-indent: -20px;
       padding-left: 20px;
     }
+
     .tab1 {
       word-wrap: break-word;
       padding-left: 20px;
     }
+
     .tab2 {
       word-wrap: break-word;
       padding-left: 40px;
     }
+
     footer {
       margin-top: 50px;
       border-top: 1px solid silver;
       font-size: 0.8em;
     }
+
     footer ol {
       padding-left: 20px;
     }
+
     /**
  * Initialiazing a `footnotes` counter on the wrapper
  */
     article {
       counter-reset: footnotes;
     }
+
     /**
  * Inline footnotes references
  * 1. Increment the counter at each new reference
@@ -55,6 +64,7 @@
       outline: none;
       /* 2 */
     }
+
     /**
  * Actual numbered references
  * 1. Display the current state of the counter (e.g. `[1]`)
@@ -83,12 +93,14 @@
       -ms-user-select: text;
       user-select: text;
     }
+
     [aria-describedby="footnote-label"]::after {
       -webkit-user-select: text;
       -moz-user-select: text;
       -ms-user-select: text;
       user-select: text;
     }
+
     /**
  * Resetting the default focused styles on the number
  */
@@ -98,15 +110,18 @@
       color: brown;
       font-weight: bold;
     }
+
     [aria-label="Back to content"] {
       font-size: 1em;
     }
+
     /**
  * Highlight target note
  */
     footer :target {
       background: lightgrey;
     }
+
     /**
  * Visually hidden yet accessible content
  */
@@ -114,17 +129,33 @@
       color: brown;
       font-style: italic;
     }
+
     #developedby {
       font-style: italic;
       color: brown;
     }
   </style>
 </head>
+
 <body>
   <center>श्रीसरस्वत्यै नमः</center>
+  <div class="hyperlink">
+    <a id="TOP">CONTENT</a>
+    <p><a href="#COL">(A) Constitutional Law</a></p>
+    <p><a href="#ADL">(B) Administrative Law</a></p>
+    <p><a href="#INL">(B) International Law</a></p>
+    <p><a href="#CRL">(D) Criminal Law</a></p>
+    <p><a href="#CIL">(E) Civil Law</a></p>
+    <p><a href="#CML">(F) Commercial Law</a></p>
+    <p><a href="#EVL">(G) Evidence Law</a></p>
+    <p><a href="#PRL">(H) Procedure Law</a></p>
+    <p><a href="#CODE">(I) Nepal Law Practitioners Council and Code of Conduct for Law Practitioners</a></p>
+    <p><a href="#MISSIL">(J) Case File Study, draft of instruments and with Knowledge of Case File related
+        topics</a></p>
+  </div>
   <div class="row">
     <div class="column" style="background-color:#aaa;">
-      <h2>संवैधानिक कानून</h2>
+      <h2 id="COL">संवैधानिक कानून</h2>
       <p><b> १. </b> संविधान र संविधानवादका आधारभूत सिद्धान्तहरू</p>
       <p>
         <b> २. </b> नेपालको संवैधानिक विकासक्रम
@@ -140,7 +171,7 @@
         र
         परिसीमा
       </p>
-               <p>        <b>६.</b> स्वतन्त्र न्यायपालिकाको आधारभूत सिद्धान्तहरू
+      <p> <b>६.</b> स्वतन्त्र न्यायपालिकाको आधारभूत सिद्धान्तहरू
       </p>
       <p>
         <b> ७.</b> संवैधानिक विषयमा सर्वोच्च अदालतको योगदान
@@ -172,17 +203,17 @@
         <p>
           <b> ङ.</b> राष्ट्रिय महिला आयोग
         </p>
-       
+
       </div>
-       <p><b> १२.</b> नेपालको संघीयता सम्बन्धी व्यवस्थामा संघ, प्रदेश र
-      स्थानीय      सरकारको      अधिकारक्षेत्र      र      अन्तरसम्ब</p>
+      <p><b> १२.</b> नेपालको संघीयता सम्बन्धी व्यवस्थामा संघ, प्रदेश र
+        स्थानीय सरकारको अधिकारक्षेत्र र अन्तरसम्ब</p>
       <p>
         <b> १३.</b> संविधान संशोधनका आधारभूत सिद्धान्त र प्रकृया
       </p>
       <p>
     </div>
     <div class="column" style="background-color:#bbb;">
-      <h2>Constitutional Law</h2>
+      <h2>Constitutional Law <a href="#TOP">&#8617</a></h2>
       <p><b> 1.</b> Basic Principles of Constitution and
         Constitutionalism</p>
       <p>
@@ -201,7 +232,7 @@
         Directive Principles and
         Policies
       </p>
-       <p>
+      <p>
         <b> 6.</b> Basic Principles of Independent Judiciary
       </p>
       <p>
@@ -234,11 +265,11 @@
         <p>
           <b> e.</b> National Commission for Women
         </p>
-        </div>
+      </div>
       <p>
-      <b>12.</b> Jurisdiction and Interrelation of Federation, Province &
-      Local Government in
-      Federal Nepal
+        <b>12.</b> Jurisdiction and Interrelation of Federation, Province &
+        Local Government in
+        Federal Nepal
       </p>
       <p>
         <b> 13.</b> Basic Principle and Process of Amendment of the
@@ -249,7 +280,7 @@
   </div>
   <div class="row">
     <div class="column" style="background-color:#aaa;">
-      <h2>प्रशासनिक कानून</h2>
+      <h2 id="ADL">प्रशासनिक कानून</h2>
       <p><b> १.</b> प्रशासनिक कानूनको प्रकृति, क्षेत्र र स्रोत</p>
       <p>
         <b> २.</b> प्रशासनिक कानून र विधिको शासन
@@ -279,7 +310,7 @@
       </p>
     </div>
     <div class="column" style="background-color:#bbb;">
-      <h2>Administrative Law</h2>
+      <h2>Administrative Law <a href="#TOP">&#8617</a></h2>
       <p><b> 1.</b> Nature, Scope and Sources of Administrative Law</p>
       <p>
         <b> 2. </b> Administrative Law and Rule of Law
@@ -308,7 +339,7 @@
   </div>
   <div class="row">
     <div class="column" style="background-color:#aaa;">
-      <h2>अन्तर्राष्ट्रिय कानून</h2>
+      <h2 id="INL">अन्तर्राष्ट्रिय कानून</h2>
       <p><b> १. </b> सार्वजनिक एवं निजी अन्तर्राष्ट्रिय कानूनका प्रकृति,
         कार्यक्षेत्र र सिद्धान्त
       </p>
@@ -337,7 +368,7 @@
       <p>
     </div>
     <div class="column" style="background-color:#bbb;">
-      <h2>International Law</h2>
+      <h2>International Law <a href="#TOP">&#8617</a></h2>
       <p><b> 1. </b> Nature, Scope and Principles of Public and Private
         International Law
       </p>
@@ -430,9 +461,10 @@
         <p>
           <b> घ.</b> वालयौन दूरुपयोग
         </p>
-        </div>
+      </div>
       <p>
-      <b> १७.</b> चोरी तथा डाँका सम्बन्धी कसुर</p>
+        <b> १७.</b> चोरी तथा डाँका सम्बन्धी कसुर
+      </p>
       <p>
         <b> १८.</b> ठगी, आपराधिक विश्वासघात तथा आपराधिक लाभ (एक्सटर्सन)
         सम्बन्धी
@@ -475,7 +507,7 @@
       <p>
     </div>
     <div class="column" style="background-color:#bbb;">
-      <h2> Criminal Law</h2>
+      <h2 id="CRL"> Criminal Law <a href="#TOP">&#8617</a></h2>
       <p><b> 1.</b> General Principles Regarding Criminal Justice and
         Punishment </p>
       <p>
@@ -539,9 +571,10 @@
         <p>
           <b> d. </b> Child Sexual Abuse
         </p>
-        </div>
+      </div>
       <p>
-      <b> 17.</b> Offenses related to Theft and Robbery</p>
+        <b> 17.</b> Offenses related to Theft and Robbery
+      </p>
       <p>
         <b> 18.</b> Offences Relating to Cheating, Criminal Breach of Trust
         and
@@ -617,9 +650,10 @@
         <p>
           <b> ए.</b> अपुताली सम्बन्धी व्यवस्था
         </p>
-        </div>
+      </div>
       <p>
-      <b> ४.</b> सम्पत्ति सम्बन्धी</p>
+        <b> ४.</b> सम्पत्ति सम्बन्धी
+      </p>
       <div class="tab1">
         <p><b>अ. </b> सम्पत्तिका सिद्धान्त र प्रकारहरु </p>
         <p>
@@ -666,9 +700,10 @@
           व्यवस्था
         </p>
         <p> </p>
-        </div>
+      </div>
       <p>
-      <b> ५. </b> दुष्कृति सम्बन्धी व्यवस्था</p>
+        <b> ५. </b> दुष्कृति सम्बन्धी व्यवस्था
+      </p>
       <p>
         <b>६.</b>
         क्षतिपूर्ति सम्बन्धी व्यवस्था
@@ -676,7 +711,7 @@
       <p>
     </div>
     <div class="column" style="background-color:#bbb;">
-      <h2>Civil Law</h2>
+      <h2 id="CIL">Civil Law <a href="#TOP">&#8617</a></h2>
       <p><b> 1. </b> General Principle of Civil Law </p>
       <p>
         <b> 2.</b> Provision Relating to Person
@@ -708,9 +743,10 @@
         <p>
           <b> g. </b> Provisions Relating to Succession
         </p>
-        </div>
+      </div>
       <p>
-      <b> 4.</b> Relating to Property </p>
+        <b> 4.</b> Relating to Property
+      </p>
       <div class="tab1">
         <p><b> a. </b> Principles Related to Property & Types of
           Property </p>
@@ -754,9 +790,10 @@
           <b> l.</b> Provisions Relating to Transactions
         </p>
         <p> </p>
-        </div>
+      </div>
       <p>
-      <b> 5.</b> Provision Relating to Tort</p>
+        <b> 5.</b> Provision Relating to Tort
+      </p>
       <p>
         <b> 6.</b> Provision relating to Compensation
       </p>
@@ -793,7 +830,7 @@
       <p>
     </div>
     <div class="column" style="background-color:#bbb;">
-      <h2> Commercial Law</h2>
+      <h2 id="CML"> Commercial Law <a href="#TOP">&#8617</a></h2>
       <p><b> 1.</b> Natural and legal person </p>
       <p>
         <b> 2.</b> Establishment, registration and operation of private / public and
@@ -851,9 +888,10 @@
         <p>
           <b> घ. </b> विशेषज्ञको राय
         </p>
-        </div>
+      </div>
       <p>
-      <b> ७. </b> मृत्युकालीन घोषणाको प्रमाणिक महत्व</p>
+        <b> ७. </b> मृत्युकालीन घोषणाको प्रमाणिक महत्व
+      </p>
       <p>
         <b> ८.</b> प्रमाणमा प्रविधिको प्रयोग (पोलिग्राफ, श्रव्यदृष्यको
         प्रमाणिक
@@ -866,7 +904,7 @@
       <p>
     </div>
     <div class="column" style="background-color:#bbb;">
-      <h2> Evidence Law</h2>
+      <h2 id="EVL"> Evidence Law <a href="#TOP">&#8617</a></h2>
       <p><b> 1.</b> Fact in Issue & Relevent Fact</p>
       <p>
         <b>2.</b> Facts not required to examine the evidence
@@ -896,9 +934,10 @@
         <p>
           <b> d.</b> Expert opinion
         </p>
-        </div>
+      </div>
       <p>
-      <b> 7. </b> Evidential value of Dying Declaration</p>
+        <b> 7. </b> Evidential value of Dying Declaration
+      </p>
       <p>
         <b> 8.</b> Use of evidence technology (polygraph, authentic
         assessment
@@ -927,9 +966,10 @@
         <p>
           <b> ग.</b> अन्तरिम आदेश
         </p>
-        </div>
+      </div>
       <p>
-      <b> ३. </b> निषेधाज्ञा सम्बन्धी निवेदन र अन्तरिम आदेश</p>
+        <b> ३. </b> निषेधाज्ञा सम्बन्धी निवेदन र अन्तरिम आदेश
+      </p>
       <p>
         <b> ४. </b> हकदैया सम्बन्धी व्यवस्था
       </p>
@@ -955,9 +995,10 @@
         <p>
           <b> च. </b> बहिक्षैत्रिय अधिकार क्षेत्र
         </p>
-        </div>
+      </div>
       <p>
-      <b> ६. </b> अदालती शुल्क सम्बन्धी व्यवस्था </p>
+        <b> ६. </b> अदालती शुल्क सम्बन्धी व्यवस्था
+      </p>
       <p>
         <b> ७.</b> फिराद तथा दावी प्रस्तुत सम्बन्धी व्यवस्था
       </p>
@@ -985,10 +1026,11 @@
           <b> ग. </b> वारिसबदर हुन सक्ने अवस्था
         </p>
         <p> </p>
-        </div>
+      </div>
       <p>
-      <b> १३.</b> सामान्य, संक्षिप्त
-      र विशेष कार्यविधि</p>
+        <b> १३.</b> सामान्य, संक्षिप्त
+        र विशेष कार्यविधि
+      </p>
       <p>
         <b> १४. </b> अन्तरकालिन वा अन्तरिम आदेश सम्बन्धी व्यवस्था
       </p>
@@ -1035,10 +1077,11 @@
           <b> ञ. </b> थुनछेकको आदेश उपर माथिल्लो अदालतमा निवेदन दिन सकिने
           कानूनी
         </p>
-        </div>
+      </div>
       <p>
-      <b> १८. </b> खुला इजलास र
-      बन्द इजलास सम्बन्धी व्यवस्था</p>
+        <b> १८. </b> खुला इजलास र
+        बन्द इजलास सम्बन्धी व्यवस्था
+      </p>
       <p>
         <b> १९. </b> मुद्दा फिर्ता लिने, मिलापत्र र मेलमिलाप
         सम्बन्धी व्यवस्था
@@ -1075,7 +1118,7 @@
         <b> २७. </b> कानूनी सहायता सम्बन्धी व्यवस्था
     </div>
     <div class="column" style="background-color:#bbb;">
-      <h2>Procedural Law</h2>
+      <h2 id="PRL">Procedural Law <a href="#TOP">&#8617</a></h2>
       <p><b> 1.</b> General Principles of Civil Procedure Law</p>
       <p>
         <b> 2. </b> Writ Procedure :
@@ -1091,9 +1134,10 @@
           <b> c. </b> Interim Order
         </p>
         <p> </p>
-        </div>
+      </div>
       <p>
-      <b> 3.</b> Injunction Application and Interim Order</p>
+        <b> 3.</b> Injunction Application and Interim Order
+      </p>
       <p>
         <b> 4. </b> Provision related to Locus Standi
       </p>
@@ -1123,9 +1167,9 @@
           <b> f. </b> Extra-territorial Jurisdiction
         </p>
         <p> </p>
-        </div>
+      </div>
       <p>
-      <b> 6.</b> Arrangement regarding Court Fee
+        <b> 6.</b> Arrangement regarding Court Fee
       </p>
       <p>
         <b>7.</b> Provision regarding filing of Complaint and Claims
@@ -1156,9 +1200,9 @@
           <b> c. </b> Revocation of Attorney
         </p>
         <p> </p>
-        </div>
+      </div>
       <p>
-      <b> 13.</b> General, Summary & Special Procedure
+        <b> 13.</b> General, Summary & Special Procedure
       </p>
       <p>
         <b> 14.</b> Provision regarding Interloculatory & Interim
@@ -1212,9 +1256,10 @@
           Court
         </p>
         <p> </p>
-        </div>
+      </div>
       <p>
-      <b> 18.</b> Open Bench & Incamera Hearing</p>
+        <b> 18.</b> Open Bench & Incamera Hearing
+      </p>
       <p>
         <b>19.</b> Provisions related to Withdrawl of Case, Mediation and
         Agreement Paper
@@ -1284,9 +1329,10 @@
           सिद्धान्तहरू,
           १९९०
         </p>
-        </div>
+      </div>
       <p>
-      <b> ४. </b> वैतनिक कानून व्यवसायी सम्बन्धित निर्देशिका, २०७२</p>
+        <b> ४. </b> वैतनिक कानून व्यवसायी सम्बन्धित निर्देशिका, २०७२
+      </p>
       <p>
         <b> ५. </b> सरकारी वकीलको आचारसंहिता, २०७५
       </p>
@@ -1296,7 +1342,7 @@
       <p>
     </div>
     <div class="column" style="background-color:#bbb;">
-      <h2> Nepal Bar Council & Code of Ethics for Legal Practitioners</h2>
+      <h2 id="CODE"> Nepal Bar Council & Code of Ethics for Legal Practitioners <a href="#TOP">&#8617</a></h2>
       <p><b> 1. </b> Relations, Roles and Differences of Nepal Bar Council
         and
         Nepal Bar Association </p>
@@ -1413,7 +1459,7 @@
         <p>
           <b> ग. </b> फैसलामा लिइएका आधारहरु
         </p>
-        </div>
+      </div>
       <p>
       <div class="tab2">
         <b> अ. </b> मुद्दाको तथ्यगत प्रश्न र कानूनी प्रश्न</p>
@@ -1427,7 +1473,7 @@
       </div>
     </div>
     <div class="column" style="background-color:#bbb;">
-      <h2>Case File Study and Drafting of Legal Instruments</h2>
+      <h2 id="MISSIL">Case File Study and Drafting of Legal Instruments <a href="#TOP">&#8617</a></h2>
       <p><b> 1. </b> Linguistic Knowledge for Legal Purposes</p>
       <p>
         <b> 2. </b> Drafting of Instruments:
@@ -1488,9 +1534,10 @@
         <p>
           <b> r. </b> Application for the Implementation of Court Decision
         </p>
-              </div>
+      </div>
       <p>
-      <b> 3. </b> Knowledge regarding subject matter of Case File</p>
+        <b> 3. </b> Knowledge regarding subject matter of Case File
+      </p>
       <div class="tab1">
         <p><b> a. </b> Examination, cross-examined and re-examination </p>
         <p>
@@ -1499,7 +1546,7 @@
         <p>
           <b> c. </b> Ratio-Decidendi
         </p>
-        </div>
+      </div>
       <p>
       <div class="tab2">
         <b> i. </b> Question of fact & question of law in a case</p>
@@ -1511,7 +1558,7 @@
           <b> iii. </b> The doctrine propounded by the Supreme
           Court
         </p>
-        </div>
+      </div>
       <p>
     </div>
   </div>
@@ -1534,8 +1581,10 @@
     </ol>
   </footer>
   <p id="developedby"><u><b>Developed by:</b></u><br>
-  Debaka Timilsina (M.A, M.Ed; LL.B) <br>
-  Shiva Prasad Acharya (M.Sc.; LL.M)<br>
-  श्रीपञ्चमि, २०७९</p>
+    Debaka Timilsina (M.A, M.Ed; LL.B) <br>
+    Shiva Prasad Acharya (M.Sc.; LL.M)<br>
+    श्रीपञ्चमि, २०७९ <a href="#TOP">&#8617</a></p>
 </body>
+
 </html>
+<!-- upgraded with hyperlink and return back key -->
