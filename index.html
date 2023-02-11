@@ -1591,4 +1591,31 @@
 </body>
 
 </html>
+
+<!--use this script to arrange the endnotes in order of maintext. The thing to be noted here is that when the script is active hyperlink are dysfunctional. So the script has to be activated only if we want to copy or print the content.
+
+  The script starts here:
+
+<script>window.onload = function() {
+  var footnotes = document.querySelectorAll('[aria-describedby="footnote-label"]');
+  var newOrderedList = document.createElement('ol');
+  
+  for (var i = 0; i < footnotes.length; i++) {
+    var footnoteId = footnotes[i].getAttribute('href').substring(1);
+    var footnoteElement = document.getElementById(footnoteId);
+    var newListItem = document.createElement('li');
+    newListItem.innerHTML = footnoteElement.innerHTML;
+    newOrderedList.appendChild(newListItem);
+  }
+  
+  var footer = document.querySelector('footer');
+  footer.innerHTML = '';
+  footer.appendChild(newOrderedList);
+}
+</script>-->
+
+
+<!-- successful sample not to be deleted -->
+<!-- text with endnotes containing hyperlinks and return back key -->
+
 <!-- upgraded with hyperlink and return back key. Also way of linking a particular section of another webpage is also shown in endnote. -->
